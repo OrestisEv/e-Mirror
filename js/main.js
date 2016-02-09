@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 	// 	}
 	// });
 
-	version.init();
+	//version.init();
 
 	time.init();
 
