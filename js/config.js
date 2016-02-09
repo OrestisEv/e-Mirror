@@ -1,7 +1,7 @@
 var config = {
-    lang: 'nl',
+    lang: 'en',
     time: {
-        timeFormat: 12,
+        timeFormat: 24,
         displaySeconds: true,
         digitFade: false,
     },
@@ -9,11 +9,11 @@ var config = {
         //change weather params here:
         //units: metric or imperial
         params: {
-            q: 'Baarn,Netherlands',
+            q: 'Geneva, Switzerland',
             units: 'metric',
             // if you want a different lang for the weather that what is set above, change it here
-            lang: 'nl',
-            APPID: 'YOUR_FREE_OPENWEATHER_API_KEY'
+            lang: 'en',
+            APPID: '4be8d23e20e9b184607f330bd2a216e0'
         }
     },
     compliments: {

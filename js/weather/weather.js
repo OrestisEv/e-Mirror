@@ -1,6 +1,6 @@
 var weather = {
 	// Default language is Dutch because that is what the original author used
-	lang: config.lang || 'nl',
+	lang: config.lang || 'en',
 	params: config.weather.params || null,
 	iconTable: {
 		'01d':'wi-day-sunny',
@@ -73,6 +73,8 @@ weather.updateCurrentWeather = function () {
 		dataType: 'json',
 		data: weather.params,
 		success: function (data) {
+			
+			
 
 			var _temperature = this.roundValue(data.main.temp),
 				_temperatureMin = this.roundValue(data.main.temp_min),
@@ -82,7 +84,7 @@ weather.updateCurrentWeather = function () {
 
 			var _icon = '<span class="icon ' + _iconClass + ' dimmed wi"></span>';
 
-			var _newTempHtml = _icon + '' + _temperature + '&deg;';
+			var _newTempHtml = 'Geneva, CH ' + "\n"+ _icon + '' + _temperature + '&deg;';
 
 			$(this.temperatureLocation).updateWithText(_newTempHtml, this.fadeInterval);
 
