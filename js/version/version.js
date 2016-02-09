@@ -5,7 +5,7 @@ var version = {
 
 /**
  * Checks the version and refreshes the page if a new version has been pulled
- */
+ *
 version.checkVersion = function () {
 
 	$.ajax({
@@ -31,4 +31,4 @@ version.init = function () {
 		this.checkVersion();
 	}.bind(this), this.updateInterval);
 
-}
+}*/
